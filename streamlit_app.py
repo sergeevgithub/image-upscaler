@@ -10,14 +10,14 @@ uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg
 
 if uploaded_file is not None:
     input_image = Image.open(uploaded_file).convert("RGB")
-    st.image(input_image, caption="Uploaded Image", use_column_width=True)
+    st.image(input_image, caption="Uploaded Image", use_container_width=True)
 
     # # Process the image
     # with st.spinner("Upscaling..."):
     #     upscaled_image = input_image
 
     # # Display the upscaled image
-    # st.image(upscaled_image, caption="Upscaled Image", use_column_width=True)
+    # st.image(upscaled_image, caption="Upscaled Image", use_container_width=True)
 
     # # Option to download the upscaled image
     # st.markdown("### Download the Upscaled Image")
