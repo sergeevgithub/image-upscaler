@@ -29,3 +29,8 @@ if uploaded_file is not None:
             file_name="upscaled_image.png",
             mime="image/png"
         )
+
+sentiment_mapping = ["one", "two", "three", "four", "five"]
+selected = st.feedback("stars")
+if selected is not None:
+    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
