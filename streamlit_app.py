@@ -13,7 +13,7 @@ if uploaded_file is not None:
 
     # Process the image
     with st.spinner("Upscaling..."):
-        upscaled_image = upscale_image(input_image, model)
+        upscaled_image = input_image
 
     # Display the upscaled image
     st.image(upscaled_image, caption="Upscaled Image", use_column_width=True)
