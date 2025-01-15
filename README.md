@@ -1,9 +1,6 @@
 # ⬆️ Image Upscaler App
-```
- (Replace above with your app's name)
-```
 
-Description of the app ...
+Web application for upscaling images using a Super Resolution Generative Adversarial Network (SRGAN). The app is built with Streamlit.
 
 ## Demo App
 
