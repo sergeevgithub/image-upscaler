@@ -8,7 +8,7 @@ The app is built with Streamlit.
 
 [System Design Document](https://docs.google.com/document/d/1-Br9nFJZ-XVLywGMs1I3CzDxwQuCXnSiAHS7YWpm1tE/edit?tab=t.0)
 
-Schema placeholder
+![](https://github.com/sergeevgithub/image-upscaler/blob/master/MLSD_Schema.png)
 
 ## Use the app online
 
