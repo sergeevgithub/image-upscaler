@@ -67,10 +67,8 @@ if uploaded_file is not None:
             mime="image/png"
         )
 
+    st.markdown("Rate the result!")
     sentiment_mapping = ["one", "two", "three", "four", "five"]
-    selected = st.feedback("stars")
+    selected = st.feedback("faces")
     if selected is not None:
-        if selected == 0:
-            st.markdown(f"You selected {sentiment_mapping[selected]} star.")
-        else:
-            st.markdown(f"You selected {sentiment_mapping[selected]} stars.")
+        st.markdown("Thank you for the feedback!")
