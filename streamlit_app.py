@@ -57,11 +57,11 @@ if uploaded_file is not None:
     st.image(upscaled_image, caption="Upscaled Image", use_container_width=True)
 
     # Option to download the upscaled image
-    st.markdown("### Download the Upscaled Image")
+    st.markdown("### Download the result")
     upscaled_image.save("upscaled_image.png")
     with open("upscaled_image.png", "rb") as file:
         btn = st.download_button(
-            label="Download Image",
+            label=" ⏬ Download Image",
             data=file,
             file_name="upscaled_image.png",
             mime="image/png"
