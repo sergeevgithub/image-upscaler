@@ -42,6 +42,7 @@ def upscale_image(image, model):
 st.title(" ↕️ Image Upscaling")
 
 st.markdown("Upload an image to upscale it using a pretrained GAN model.")
+st.markdown("Currently the app supports an input of sizes up to 256x256.")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
 
