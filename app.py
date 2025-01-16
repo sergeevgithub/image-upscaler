@@ -62,7 +62,7 @@ if uploaded_file is not None:
     
         st.image(upscaled_image, caption="Upscaled Image", use_container_width=True)
     
-        # Вownload the upscaled image
+        # Download the upscaled image
         st.markdown("### Download the result")
         upscaled_image.save("upscaled_image.png")
         with open("upscaled_image.png", "rb") as file:
