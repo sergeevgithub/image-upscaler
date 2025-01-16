@@ -52,7 +52,7 @@ if uploaded_file is not None:
 
     # Check the dimensions of the uploaded image
     width, height = input_image.size
-    if width < 256 or height < 256:
+    if width > 256 or height > 256:
         st.error(f"🚫 The uploaded image size ({width}x{height}) exceeds the limit of 256x256 pixels. Please upload a smaller image.")
     else:
         # Process the image
