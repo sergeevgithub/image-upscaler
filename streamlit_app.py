@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 
+
 # Streamlit interface
 st.title("Image Upscaling with GAN")
 
@@ -30,7 +31,10 @@ if uploaded_file is not None:
             mime="image/png"
         )
 
-sentiment_mapping = ["one", "two", "three", "four", "five"]
-selected = st.feedback("stars")
-if selected is not None:
-    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+    sentiment_mapping = ["one", "two", "three", "four", "five"]
+    selected = st.feedback("stars")
+    if selected is not None:
+        if selected == 0:
+            st.markdown(f"You selected {sentiment_mapping[selected]} star.")
+        else:
+            st.markdown(f"You selected {sentiment_mapping[selected]} stars.")
