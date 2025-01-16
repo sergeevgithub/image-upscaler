@@ -16,6 +16,9 @@ def load_model():
     model.eval()
     return model
 
+# Load model
+model = load_model()
+
 def denormalize(tensor):
     return tensor * 0.5 + 0.5
 
