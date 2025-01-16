@@ -4,6 +4,8 @@ Web application for upscaling images using a Super Resolution Generative Adversa
 
 The app is built with Streamlit.
 
+The application currently supports image upscaling for input sizes of up to 256x256 pixels. This limitation is due to computational constraints in the current implementation.
+
 ## System Design
 
 [System Design Document](https://docs.google.com/document/d/1-Br9nFJZ-XVLywGMs1I3CzDxwQuCXnSiAHS7YWpm1tE/edit?tab=t.0)
