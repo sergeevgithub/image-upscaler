@@ -22,9 +22,7 @@ Schema placeholder
 
 This is filler text, please replace this with text for this section.
 
-## Further Reading
+## Acknowledgments
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+* The GAN model used in this project is based on the Photo-Realistic Single Image Super-Resolution Generative Adversarial
+Network ([SRGAN](https://arxiv.org/pdf/1609.04802v5)) architecture. 
