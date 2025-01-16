@@ -39,7 +39,7 @@ def upscale_image(image, model):
 
 
 # Streamlit interface
-st.title(" ⬆️ Image Upscaling with GAN")
+st.title(" ↕️ Image Upscaling with GAN")
 
 st.markdown("Upload an image to upscale it using a pretrained GAN model.")
 
