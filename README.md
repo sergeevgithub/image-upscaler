@@ -15,8 +15,8 @@ Schema placeholder
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mlsd-image-upscaler.streamlit.app/)
 
 ## Local Installation and Setup
-
-Follow these steps to set up the project on your local machine:
+If you want to improve the app or use local GPU for faster processing,
+follow these steps to set up the project on your local machine:
 
 1. Clone the repository:
    ```
