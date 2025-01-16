@@ -49,6 +49,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg
 if uploaded_file is not None:
     input_image = Image.open(uploaded_file).convert("RGB")
     st.image(input_image, caption="Uploaded Image", use_container_width=True)
+     width, height = input_image.size
     st.error(f"🚫 The uploaded image size ({width}x{height}) exceeds the limit of 256x256 pixels. Please upload a smaller image.")
     # Check the dimensions of the uploaded image
     width, height = input_image.size
