@@ -1,4 +1,4 @@
-# ⬆️ Image Upscaler App
+# ↕️ Image Upscaler App
 
 Web application for upscaling images using a Super Resolution Generative Adversarial Network (SRGAN). 
 
@@ -10,17 +10,27 @@ The app is built with Streamlit.
 
 Schema placeholder
 
-## Demo App
+## Use it online!
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mlsd-image-upscaler.streamlit.app/)
 
-## GitHub Codespaces
+## Local Installation and Setup
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+Follow these steps to set up the project on your local machine:
 
-## Section Heading
-
-This is filler text, please replace this with text for this section.
+1. Clone the repository:
+   ```
+   git clone https://github.com/sergeevgithub/image-upscaler.git
+   cd image-upscaler
+   ```
+2. Install the dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```
+   streamlit run app.py
+   ```
 
 ## Acknowledgments
 
