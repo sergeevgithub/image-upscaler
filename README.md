@@ -4,6 +4,12 @@ Web application for upscaling images using a Super Resolution Generative Adversa
 
 The app is built with Streamlit.
 
+## System Design
+
+[System Design Document](https://docs.google.com/document/d/1-Br9nFJZ-XVLywGMs1I3CzDxwQuCXnSiAHS7YWpm1tE/edit?tab=t.0)
+
+Schema placeholder
+
 ## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mlsd-image-upscaler.streamlit.app/)
