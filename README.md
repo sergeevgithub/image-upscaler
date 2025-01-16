@@ -8,7 +8,7 @@ The app is built with Streamlit.
 
 [System Design Document](https://docs.google.com/document/d/1-Br9nFJZ-XVLywGMs1I3CzDxwQuCXnSiAHS7YWpm1tE/edit?tab=t.0)
 
-<img width="1000" alt="Снимок экрана 2025-01-16 в 15 44 35" src="https://github.com/user-attachments/assets/73248bd8-e856-4cc8-92dd-3d7a557534c9" />
+<img width="1000" src="https://github.com/user-attachments/assets/73248bd8-e856-4cc8-92dd-3d7a557534c9" />
 
 ## Use the app online
 
