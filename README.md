@@ -10,7 +10,7 @@ The app is built with Streamlit.
 
 Schema placeholder
 
-## Use app online
+## Use the app online
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mlsd-image-upscaler.streamlit.app/)
 
