@@ -11,7 +11,10 @@ from model.gen import Generator
 def load_model():
     model = Generator()
     # Adjust to gpu after Google Cloud deployment
-    checkpoint = torch.load('model/weights/gen_weights.tar', map_location=torch.device('cpu'))
+    checkpoint = torch.load(
+        'model/weights/gen_weights.tar', 
+        map_location=torch.device('cpu')
+    )
     model.load_state_dict(checkpoint['state_dict'])
     model.eval()
     return model
