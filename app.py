@@ -50,26 +50,31 @@ if uploaded_file is not None:
     input_image = Image.open(uploaded_file).convert("RGB")
     st.image(input_image, caption="Uploaded Image", use_container_width=True)
 
-    # Process the image
-    with st.spinner("Upscaling..."):
-        upscaled_image = upscale_image(input_image, model)
-
-    # Display the upscaled image
-    st.image(upscaled_image, caption="Upscaled Image", use_container_width=True)
-
-    # Option to download the upscaled image
-    st.markdown("### Download the result")
-    upscaled_image.save("upscaled_image.png")
-    with open("upscaled_image.png", "rb") as file:
-        btn = st.download_button(
-            label=" ⏬ Download Image",
-            data=file,
-            file_name="upscaled_image.png",
-            mime="image/png"
-        )
-
-    st.markdown("Rate the result!")
-    sentiment_mapping = ["one", "two", "three", "four", "five"]
-    selected = st.feedback("stars")
-    if selected is not None:
-        st.markdown("Thank you for the feedback!")
+    # Check the dimensions of the uploaded image
+    width, height = input_image.size
+    if width > 256 or height > 256:
+        st.error(f"🚫 The uploaded image size ({width}x{height}) exceeds the limit of 256x256 pixels. Please upload a smaller image.")
+    else:
+        # Process the image
+        with st.spinner("Upscaling..."):
+            upscaled_image = upscale_image(input_image, model)
+    
+        # Display the upscaled image
+        st.image(upscaled_image, caption="Upscaled Image", use_container_width=True)
+    
+        # Option to download the upscaled image
+        st.markdown("### Download the result")
+        upscaled_image.save("upscaled_image.png")
+        with open("upscaled_image.png", "rb") as file:
+            btn = st.download_button(
+                label=" ⏬ Download Image",
+                data=file,
+                file_name="upscaled_image.png",
+                mime="image/png"
+            )
+    
+        st.markdown("Rate the result!")
+        sentiment_mapping = ["one", "two", "three", "four", "five"]
+        selected = st.feedback("stars")
+        if selected is not None:
+            st.markdown("Thank you for the feedback!")
