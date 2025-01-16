@@ -16,7 +16,7 @@ def load_model():
     model.eval()
     return model
 
-# Load model
+# Load the model
 model = load_model()
 
 def denormalize(tensor):
@@ -39,7 +39,7 @@ def upscale_image(image, model):
 
 
 # Streamlit interface
-st.title(" ↕️ Image Upscaling with GAN")
+st.title(" ↕️ Image Upscaling")
 
 st.markdown("Upload an image to upscale it using a pretrained GAN model.")
 
