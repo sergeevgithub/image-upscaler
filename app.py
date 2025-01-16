@@ -9,14 +9,13 @@ from model.gen import Generator
 # Load the GAN model
 @st.cache_resource
 def load_model():
-    # Adjust to gpu after Google Cloud deployment
     model = Generator()
+    # Adjust to gpu after Google Cloud deployment
     checkpoint = torch.load('model/weights/gen_weights.tar', map_location=torch.device('cpu'))
     model.load_state_dict(checkpoint['state_dict'])
     model.eval()
     return model
 
-# Load the model
 model = load_model()
 
 def denormalize(tensor):
@@ -24,7 +23,6 @@ def denormalize(tensor):
 
 # Image transformation
 def upscale_image(image, model):
-    # Transform the image to a tensor
     transform = transforms.Compose([
         transforms.ToTensor(),
     ])
@@ -59,10 +57,9 @@ if uploaded_file is not None:
         with st.spinner("Upscaling..."):
             upscaled_image = upscale_image(input_image, model)
     
-        # Display the upscaled image
         st.image(upscaled_image, caption="Upscaled Image", use_container_width=True)
     
-        # Option to download the upscaled image
+        # Вownload the upscaled image
         st.markdown("### Download the result")
         upscaled_image.save("upscaled_image.png")
         with open("upscaled_image.png", "rb") as file:
